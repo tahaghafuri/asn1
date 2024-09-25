@@ -1,6 +1,6 @@
-# `@ldapjs/asn1`
+# `@ldap-js/asn1`
 
-`@ldapjs/asn1` is a library for encoding and decoding ASN.1 datatypes in pure
+`@ldap-js/asn1` is a library for encoding and decoding ASN.1 datatypes in pure
 JS. Currently BER encoding is supported.
 
 ### Decoding
@@ -8,7 +8,7 @@ JS. Currently BER encoding is supported.
 The following reads an ASN.1 sequence with a boolean.
 
 ```js
-const { BerReader, BerTypes } = require('@ldapjs/asn1')
+const { BerReader, BerTypes } = require('@ldap-js/asn1')
 const reader = new BerReader(Buffer.from([0x30, 0x03, 0x01, 0x01, 0xff]))
 
 reader.readSequence()
@@ -22,7 +22,7 @@ console.log(reader.readBoolean())
 The following generates the same payload as above.
 
 ```js
-const { BerWriter } = require('@ldapjs/asn1');
+const { BerWriter } = require('@ldap-js/asn1');
 const writer = new BerWriter();
 
 writer.startSequence();
@@ -35,9 +35,9 @@ console.log(writer.buffer);
 ## Installation
 
 ```sh
-npm install @ldapjs/asn1
+npm install @ldap-js/asn1
 ```
 
 ## Bugs
 
-See <https://github.com/ldapjs/asn1/issues>.
+See <https://github.com/ldap-js/asn1/issues>.
