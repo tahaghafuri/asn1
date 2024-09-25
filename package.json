@@ -4,14 +4,15 @@
     "Mark Cavage <mcavage@gmail.com>",
     "David Gwynne <loki@animata.net>",
     "Yunong Xiao <yunong@joyent.com>",
-    "Alex Wilson <alex.wilson@joyent.com>"
+    "Alex Wilson <alex.wilson@joyent.com>",
+    "Taha Amin Ghafuri <info@tahaghafuri.ir>"
   ],
-  "name": "@ldapjs/asn1",
+  "name": "@ldap-js/asn1",
   "description": "Contains parsers and serializers for ASN.1 (currently BER only)",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ldapjs/asn1.git"
+    "url": "git://github.com/ldap-js/asn1.git"
   },
   "main": "index.js",
   "devDependencies": {
